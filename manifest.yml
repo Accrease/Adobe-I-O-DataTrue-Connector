@@ -1,0 +1,17 @@
+packages:
+  __APP_PACKAGE__:
+    license: Apache-2.0
+    actions:
+      generic:
+        function: actions\generic\index.js
+        web: 'yes'
+        runtime: 'nodejs:14'
+        inputs:
+          LOG_LEVEL: debug
+          ENVIRONMENT:
+          DATATRUE_API_KEY:
+          Tests:
+            test_class:
+            test_id:
+        annotations:
+          final: true
